@@ -252,6 +252,7 @@ void UiTranslator::translate_menus_and_actions() const
         {deps_.actions.category_language_italian, "Italian"},
         {deps_.actions.category_language_polish, "Polish"},
         {deps_.actions.category_language_portuguese, "Portuguese"},
+        {deps_.actions.category_language_russian, "Russian"},
         {deps_.actions.category_language_spanish, "Spanish"},
         {deps_.actions.category_language_turkish, "Turkish"},
         {deps_.actions.about_action, "&About AI File Sorter"},
@@ -367,6 +368,9 @@ void UiTranslator::update_category_language_checks(CategoryLanguage configured) 
     }
     if (deps_.category_language.portuguese) {
         deps_.category_language.portuguese->setChecked(configured == CategoryLanguage::Portuguese);
+    }
+    if (deps_.category_language.russian) {
+        deps_.category_language.russian->setChecked(configured == CategoryLanguage::Russian);
     }
     if (deps_.category_language.spanish) {
         deps_.category_language.spanish->setChecked(configured == CategoryLanguage::Spanish);

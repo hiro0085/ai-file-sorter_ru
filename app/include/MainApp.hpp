@@ -334,6 +334,7 @@ private:
     QAction* category_language_italian{nullptr};
     QAction* category_language_polish{nullptr};
     QAction* category_language_portuguese{nullptr};
+    QAction* category_language_russian{nullptr};
     QAction* category_language_spanish{nullptr};
     QAction* category_language_turkish{nullptr};
     QAction* about_action{nullptr};

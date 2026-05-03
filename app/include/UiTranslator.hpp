@@ -111,6 +111,7 @@ public:
         QAction*& category_language_dutch;
         QAction*& category_language_polish;
         QAction*& category_language_portuguese;
+        QAction*& category_language_russian;
         QAction*& category_language_spanish;
         QAction*& category_language_turkish;
         QAction*& about_action;
@@ -147,6 +148,7 @@ public:
         QAction*& italian;
         QAction*& polish;
         QAction*& portuguese;
+        QAction*& russian;
         QAction*& spanish;
         QAction*& turkish;
     };

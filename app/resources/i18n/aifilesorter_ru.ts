@@ -106,6 +106,7 @@
         <message><source>Italian</source><translation>Итальянский</translation></message>
         <message><source>Polish</source><translation>Польский</translation></message>
         <message><source>Portuguese</source><translation>Португальский</translation></message>
+        <message><source>Russian</source><translation>Русский</translation></message>
         <message><source>Spanish</source><translation>Испанский</translation></message>
         <message><source>Turkish</source><translation>Турецкий</translation></message>
         <message><source>&amp;About AI File Sorter</source><translation>&amp;О программе AI File Sorter</translation></message>
@@ -116,5 +117,26 @@
         <message><source>File Explorer</source><translation>Проводник файлов</translation></message>
         <message><source>Cancelling analysisвЂ¦</source><translation>Отмена анализа...</translation></message>
         <message><source>AnalyzingвЂ¦</source><translation>Анализ...</translation></message>
+    </context>
+    <context>
+        <name>CategorizationProgressDialog</name>
+        <message><source>[STOP] Analysis will stop after the current item is processed.</source><translation>[СТОП] Анализ остановится после обработки текущего элемента.</translation></message>
+        <message><source>Image analysis</source><translation>Анализ изображений</translation></message>
+        <message><source>Document analysis</source><translation>Анализ документов</translation></message>
+        <message><source>Categorization</source><translation>Категоризация</translation></message>
+        <message><source>Directory</source><translation>Папка</translation></message>
+        <message><source>Image</source><translation>Изображение</translation></message>
+        <message><source>Document</source><translation>Документ</translation></message>
+        <message><source>File</source><translation>Файл</translation></message>
+        <message><source>Type</source><translation>Тип</translation></message>
+        <message><source>Stage %1: %2</source><translation>Этап %1: %2</translation></message>
+        <message><source>Pending</source><translation>Ожидает</translation></message>
+        <message><source>In progress</source><translation>В процессе</translation></message>
+        <message><source>Complete</source><translation>Готово</translation></message>
+        <message><source>Processed 0/0  |  In progress: 0  |  Pending: 0</source><translation>Обработано 0/0  |  В процессе: 0  |  Ожидает: 0</translation></message>
+        <message><source>Processed %1/%2  |  In progress: %3  |  Pending: %4</source><translation>Обработано %1/%2  |  В процессе: %3  |  Ожидает: %4</translation></message>
+        <message><source>Analyzing Files</source><translation>Анализ файлов</translation></message>
+        <message><source>Stop Analysis</source><translation>Остановить анализ</translation></message>
+        <message><source>Activity log</source><translation>Журнал действий</translation></message>
     </context>
 </TS>

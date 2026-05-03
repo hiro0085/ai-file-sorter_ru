@@ -13,13 +13,14 @@ enum class CategoryLanguage {
     Italian,
     Polish,
     Portuguese,
+    Russian,
     Spanish,
     Turkish
 };
 
 inline QString categoryLanguageToString(CategoryLanguage language)
 {
-    static const std::array<const char*, 9> names = {
+    static const std::array<const char*, 10> names = {
         "Dutch",
         "English",
         "French",
@@ -27,6 +28,7 @@ inline QString categoryLanguageToString(CategoryLanguage language)
         "Italian",
         "Polish",
         "Portuguese",
+        "Russian",
         "Spanish",
         "Turkish"
     };
@@ -41,7 +43,7 @@ inline QString categoryLanguageToString(CategoryLanguage language)
 inline CategoryLanguage categoryLanguageFromString(const QString& value)
 {
     const QString lowered = value.toLower();
-    static const std::array<std::pair<QString, CategoryLanguage>, 9> mapping = {{
+    static const std::array<std::pair<QString, CategoryLanguage>, 10> mapping = {{
         {QStringLiteral("dutch"), CategoryLanguage::Dutch},
         {QStringLiteral("english"), CategoryLanguage::English},
         {QStringLiteral("french"), CategoryLanguage::French},
@@ -49,6 +51,7 @@ inline CategoryLanguage categoryLanguageFromString(const QString& value)
         {QStringLiteral("italian"), CategoryLanguage::Italian},
         {QStringLiteral("polish"), CategoryLanguage::Polish},
         {QStringLiteral("portuguese"), CategoryLanguage::Portuguese},
+        {QStringLiteral("russian"), CategoryLanguage::Russian},
         {QStringLiteral("spanish"), CategoryLanguage::Spanish},
         {QStringLiteral("turkish"), CategoryLanguage::Turkish},
     }};

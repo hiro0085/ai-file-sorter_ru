@@ -590,6 +590,7 @@ UiTranslator::Dependencies MainAppUiBuilder::build_translator_dependencies(MainA
             app.category_language_dutch,
             app.category_language_polish,
             app.category_language_portuguese,
+            app.category_language_russian,
             app.category_language_spanish,
             app.category_language_turkish,
             app.about_action,
@@ -616,6 +617,7 @@ UiTranslator::Dependencies MainAppUiBuilder::build_translator_dependencies(MainA
             app.category_language_italian,
             app.category_language_polish,
             app.category_language_portuguese,
+            app.category_language_russian,
             app.category_language_spanish,
             app.category_language_turkish},
         .file_explorer_dock = app.file_explorer_dock,
@@ -780,6 +782,7 @@ void MainAppUiBuilder::build_settings_menu(MainApp& app) {
     app.category_language_italian = add_cat_lang(CategoryLanguage::Italian);
     app.category_language_polish = add_cat_lang(CategoryLanguage::Polish);
     app.category_language_portuguese = add_cat_lang(CategoryLanguage::Portuguese);
+    app.category_language_russian = add_cat_lang(CategoryLanguage::Russian);
     app.category_language_spanish = add_cat_lang(CategoryLanguage::Spanish);
     app.category_language_turkish = add_cat_lang(CategoryLanguage::Turkish);
 
