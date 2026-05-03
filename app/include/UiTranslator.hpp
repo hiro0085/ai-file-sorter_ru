@@ -103,6 +103,7 @@ public:
         QAction*& spanish_action;
         QAction*& turkish_action;
         QAction*& korean_action;
+        QAction*& russian_action;
         QAction*& category_language_english;
         QAction*& category_language_french;
         QAction*& category_language_german;
@@ -131,6 +132,7 @@ public:
         QAction*& spanish_action;
         QAction*& turkish_action;
         QAction*& korean_action;
+        QAction*& russian_action;
     };
 
     /**

@@ -244,6 +244,7 @@ void UiTranslator::translate_menus_and_actions() const
         {deps_.actions.spanish_action, "&Spanish"},
         {deps_.actions.turkish_action, "&Turkish"},
         {deps_.actions.korean_action, "&Korean"},
+        {deps_.actions.russian_action, "&Russian"},
         {deps_.actions.category_language_dutch, "Dutch"},
         {deps_.actions.category_language_english, "English"},
         {deps_.actions.category_language_french, "French"},
@@ -334,6 +335,9 @@ void UiTranslator::update_language_group_checks(Language configured) const
     }
     if (deps_.language.korean_action) {
         deps_.language.korean_action->setChecked(configured == Language::Korean);
+    }
+    if (deps_.language.russian_action) {
+        deps_.language.russian_action->setChecked(configured == Language::Russian);
     }
 }
 

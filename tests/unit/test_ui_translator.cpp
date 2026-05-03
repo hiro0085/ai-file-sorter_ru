@@ -90,6 +90,7 @@ struct UiTranslatorTestHarness {
     QAction* spanish_action = new QAction(&window);
     QAction* turkish_action = new QAction(&window);
     QAction* korean_action = new QAction(&window);
+    QAction* russian_action = new QAction(&window);
     QAction* category_language_english = new QAction(&window);
     QAction* category_language_french = new QAction(&window);
     QAction* category_language_german = new QAction(&window);
@@ -151,6 +152,8 @@ struct UiTranslatorTestHarness {
         turkish_action->setData(static_cast<int>(Language::Turkish));
         korean_action->setCheckable(true);
         korean_action->setData(static_cast<int>(Language::Korean));
+        russian_action->setCheckable(true);
+        russian_action->setData(static_cast<int>(Language::Russian));
         language_group->addAction(english_action);
         language_group->addAction(dutch_action);
         language_group->addAction(french_action);
@@ -159,6 +162,7 @@ struct UiTranslatorTestHarness {
         language_group->addAction(spanish_action);
         language_group->addAction(turkish_action);
         language_group->addAction(korean_action);
+        language_group->addAction(russian_action);
     }
 
     UiTranslator::Dependencies build_deps()
@@ -224,6 +228,7 @@ struct UiTranslatorTestHarness {
                 spanish_action,
                 turkish_action,
                 korean_action,
+                russian_action,
                 category_language_english,
                 category_language_french,
                 category_language_german,
@@ -246,7 +251,8 @@ struct UiTranslatorTestHarness {
                 italian_action,
                 spanish_action,
                 turkish_action,
-                korean_action},
+                korean_action,
+                russian_action},
             .category_language = UiTranslator::CategoryLanguageControls{
                 category_language_group,
                 category_language_dutch,

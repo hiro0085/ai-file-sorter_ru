@@ -32,7 +32,8 @@ TEST_CASE("MainApp retranslate reflects language changes") {
         {Language::Spanish, QStringLiteral("Analizar carpeta"), QStringLiteral("Carpeta:")},
         {Language::Dutch, QStringLiteral("Map analyseren"), QStringLiteral("Map:")},
         {Language::Turkish, QStringLiteral("Klasörü analiz et"), QStringLiteral("Klasör:")},
-        {Language::Korean, QStringLiteral("폴더 분석"), QStringLiteral("폴더:")}
+        {Language::Korean, QStringLiteral("폴더 분석"), QStringLiteral("폴더:")},
+        {Language::Russian, QStringLiteral("Анализировать папку"), QStringLiteral("Папка:")}
     };
 
     for (const auto& entry : expected) {
@@ -155,7 +156,18 @@ TEST_CASE("Updater strings are translated for all supported UI languages") {
          QStringLiteral("업데이트 설치 프로그램을 다운로드하는 중..."),
          QStringLiteral("설치 프로그램 준비 완료"),
          QStringLiteral("업데이트하려면 앱을 종료하고 설치 프로그램을 실행하세요"),
-         QStringLiteral("종료 후 설치 프로그램 실행")}
+         QStringLiteral("종료 후 설치 프로그램 실행")},
+        {Language::Russian,
+         QStringLiteral("Ошибка обновления"),
+         QStringLiteral("Обновить вручную"),
+         QStringLiteral("Не удалось подготовить установщик обновления.\n%1"),
+         QStringLiteral("Не удалось запустить установщик."),
+         QStringLiteral("Для этого обновления нет доступной ссылки загрузки."),
+         QStringLiteral("Загрузка обновления"),
+         QStringLiteral("Загрузка установщика обновления..."),
+         QStringLiteral("Установщик готов"),
+         QStringLiteral("Закройте приложение и запустите установщик, чтобы обновиться"),
+         QStringLiteral("Закрыть и запустить установщик")}
     };
 
     for (const auto& entry : expected) {
